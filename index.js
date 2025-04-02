@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config(); // Load .env before using environment variables
+dotenv.config();
 
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 7000;
 const URL = process.env.MONGO_URL;
 
 
-// Middleware
+// Middleware   
 app.use(bodyParser.json());
 app.use(cors());
 
